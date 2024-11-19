@@ -15,13 +15,18 @@ apt install make sudo curl -y
 # 主菜单
 function main_menu() {
     clear
-    echo "================================================================"
-    echo "========================= Masa Oracle 安装脚本 ========================="
+    echo "╔═╗╔═╦╗─╔╦═══╦═══╦═══╦═══╗" 
+    echo "╚╗╚╝╔╣║─║║╔══╣╔═╗║╔═╗║╔═╗║" 
+    echo "─╚╗╔╝║║─║║╚══╣║─╚╣║─║║║─║║"     
+    echo "─╔╝╚╗║║─║║╔══╣║╔═╣╚═╝║║─║║"
+    echo "╔╝╔╗╚╣╚═╝║╚══╣╚╩═║╔═╗║╚═╝║"
+    echo "╚═╝╚═╩═══╩═══╩═══╩╝─╚╩═══╝"
+    echo "我的推特：推特雪糕战神@Hy78516012" 
     echo "请选择要执行的操作:"
-    echo "1. 安装 Masa Oracle 节点"
+    echo "1. 安装节点"
     echo "2. 查看日志"
     echo "3. 退出"
-    echo "4. 获取 Multiaddress"
+    echo "4. 获取节点ID"
     read -p "请输入选项（1-4）: " OPTION
     case $OPTION in
         1) install_masa_oracle ;;
