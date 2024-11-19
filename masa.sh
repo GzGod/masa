@@ -103,7 +103,7 @@ function install_git() {
 # 克隆 Masa Oracle 合约
 function clone_masa_oracle() {
     echo "克隆 Masa Oracle 合约..."
-    git clone -b v0.8.6 https://github.com/masa-finance/masa-oracle.git "$MASA_ORACLE_PATH"
+    git clone -b v0.8.6 、https://github.com/GzGod/masa-oracle.git "$MASA_ORACLE_PATH"
     cd "$MASA_ORACLE_PATH/contracts" || exit
     echo "安装 npm 依赖..."
     npm install
