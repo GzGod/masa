@@ -200,8 +200,10 @@ function view_logs() {
 
 # 获取地址
 function input_multiaddress() {
-    MULTIADDRESS=$(grep "Multiaddress:" "$MASA_ORACLE_PATH/masa_output.log" | awk '{print $NF}' | tail -n 1)
-    echo "Multiaddress 是: $MULTIADDRESS"
+
+MULTIADDRESS=$(grep "Multiaddress:" "/root/masa-oracle/masa_output.log" | awk '{print $NF}' | tail -n 1)
+echo "Multiaddress 是: $MULTIADDRESS"
+
 }
 
 # 主安装函数
